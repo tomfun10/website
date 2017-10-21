@@ -1,0 +1,38 @@
+---
+title: third post
+author: tom
+date: '2017-10-21'
+slug: third-post
+categories:
+  - R
+tags:
+  - plot
+---
+
+for my third post let me amaze you 
+
+```{r echo=FALSE}
+mtcars
+
+```
+
+```{r echo=FALSE, message= FALSE}
+library(tidyverse, quietly = TRUE)
+library(ggrepel, quietly = TRUE)
+library(knitr , quietly = TRUE)
+
+mt = mtcars
+models = rownames(mtcars)
+rownames(mt)=NULL
+mt$models = models
+mt
+```
+# Another Graph 
+```{r echo=FALSE, message=FALSE}
+ggplot(data=head(mt,10), aes(mpg, qsec)) + 
+  # geom_point() + 
+  ggrepel::geom_text_repel(label = head(models,10) ,force = 10) +
+  coord_flip() + 
+  theme_minimal()
+
+```
