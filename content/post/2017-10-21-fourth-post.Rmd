@@ -1,0 +1,20 @@
+---
+title: fourth post
+author: tom
+date: '2017-10-21'
+slug: fourth-post
+categories:
+  - R
+tags: []
+---
+
+```{r}
+iris %>% 
+  ggplot(aes(x=Sepal.Length
+             ,y=Sepal.Width
+             ,color=Species)) + 
+  geom_point()
+
+
+```
+
