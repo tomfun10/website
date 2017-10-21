@@ -1,0 +1,24 @@
+---
+title: sec post
+author: 'tom '
+date: '2017-10-21'
+slug: sec-post
+categories:
+  - R
+tags:
+  - plot
+---
+
+# Love this Graph more
+
+```{r echo=FALSE ,message=FALSE}
+library(tidyverse ,quietly = TRUE)
+```
+
+```{r echo= FALSE}
+ggplot(data= iris, aes(x = Sepal.Length, y = Sepal.Width)) + 
+  geom_point()
+
+
+```
+
