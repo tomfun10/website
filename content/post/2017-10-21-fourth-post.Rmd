@@ -1,14 +1,14 @@
 ---
-title: fourth post
-author: tom
+title: "fourth post"
+author: "tom"
 date: '2017-10-21'
 slug: fourth-post
-categories:
-  - R
 tags: []
+categories: R
 ---
 
-```{r}
+```{r echo=FALSE, message= FALSE}
+library(tidyverse, quietly = TRUE)
 iris %>% 
   ggplot(aes(x=Sepal.Length
              ,y=Sepal.Width
