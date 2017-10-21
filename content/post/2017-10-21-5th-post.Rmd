@@ -1,0 +1,21 @@
+---
+title: 5th post
+author: sam
+date: '2017-10-21'
+slug: 5th-post
+categories:
+  - R
+tags:
+  - regression
+---
+
+```{r echo=FALSE , message=FALSE}
+library(tidyverse)
+
+  ggplot(mpg, aes(reorder(class,hwy), hwy))+
+  geom_boxplot() +
+    coord_flip()
+  
+
+```
+
