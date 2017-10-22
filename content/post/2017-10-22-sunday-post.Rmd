@@ -1,0 +1,20 @@
+---
+title: sunday post
+author: tom
+date: '2017-10-22'
+slug: sunday-post
+categories:
+  - R
+tags: [Sunday Stuff]
+---
+
+```{r message=FALSE , echo=FALSE}
+library(tidyverse)
+
+iris %>%  
+  ggplot(aes(x=Sepal.Length)) + 
+  geom_density(aes(color=Species,fill=Species,alpha=0.5))
+
+
+```
+
