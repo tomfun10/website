@@ -1,0 +1,21 @@
+---
+title: sunday 2nd post
+author: tom
+date: '2017-10-22'
+slug: sunday-2nd-post
+categories:
+  - R
+tags:
+  - regression
+---
+
+```{r message=FALSE , echo=FALSE}
+library(tidyverse)
+
+iris %>% 
+  ggplot(aes(x = reorder(Species,Sepal.Length), y= Sepal.Length)) + 
+  geom_boxplot()
+
+
+```
+
