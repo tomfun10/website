@@ -14,7 +14,7 @@ library(tidyverse)
 
 iris %>% 
   ggplot(aes(x = reorder(Species,Sepal.Length), y= Sepal.Length)) + 
-  geom_boxplot()
+  geom_boxplot(aes(color= Species))
 
 
 ```
